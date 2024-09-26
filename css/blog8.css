@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    color: #444444;
+}
+
+:root{
+    --green:#118870;
+    --black:#444;
+    --light-color:#111;
+    --box-shadow:.2rem .3rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.2rem .3rem 0 rgba(0, 0, 0, .2);
+    --border:.15rem solid var(--green);
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.header{
+    padding:1rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    background: #0b4049;
+    
+}
+
+.header .logo{
+    font-size: 1.5rem;
+    color: rgb(220, 242, 245);
+}
+
+.header .logo i{
+    color: #c0392b;
+}
+
+.header .navbar a{
+    font-size: 1rem;
+    color: rgb(192, 250, 245);
+    margin-left: 1rem;
+}
+
+.header .navbar a:hover{
+    color:rgb(255, 255, 255);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color:#fff;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.footer .box-container{
+    display: grid;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    padding: 2rem 3rem 0 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+    gap:6rem;
+
+}
+
+.footer .box-container .box h3{
+    font-size: 1.4rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: flex;
+    font-size: 1rem;
+    color:var(--light-color);
+    padding: 0.6rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+    color: #0f1f64;
+}
+
+.footer .credit{
+    padding: 1rem;
+    /* padding-top: 2rem; */
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color:var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color:var(--green);
+}

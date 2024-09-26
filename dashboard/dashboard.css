@@ -1,0 +1,238 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    color: #444444;
+}
+
+:root{
+    --green:#118870;
+    --black:#444;
+    --light-color:#111;
+    --box-shadow:.2rem .3rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.2rem .3rem 0 rgba(0, 0, 0, .2);
+    --border:.15rem solid var(--green);
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.header{
+    padding:1rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    background: #118870;
+    
+}
+.header img{
+    width: 40px;
+}
+
+.header .logo{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.header .navbar a{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+}
+
+.header .navbar a:hover{
+    color:rgb(65,89,94);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color:#fff;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
+}
+
+.footer{
+    background-color: #e5f4f4;
+}
+
+.footer .box-container{
+    display: grid;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    padding: 2rem 3rem 0 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+    gap:6rem;
+
+}
+
+.footer .box-container .box h3{
+    font-size: 1.4rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: flex;
+    font-size: 1rem;
+    color:var(--light-color);
+    padding: 0.6rem 0;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+    color: #0f1f64;
+}
+
+.footer .credit{
+    padding: 1rem;
+    /* padding-top: 2rem; */
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color:var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+} */
+
+h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.dash-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 150px 150px 100px 300px;
+}
+
+
+.dash-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-container form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dash-container form input[type="text"],
+.dash-container form input[type="password"],
+.dash-container form input[type="file"],
+.dash-container form textarea,
+.dash-container form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.dash-container form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dash-container form button:hover {
+    background-color: #218838;
+}
+
+.reviews-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.review p {
+    margin: 0;
+}
+
+.review img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+

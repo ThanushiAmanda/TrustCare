@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>TrustCare</title>
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> <img src="./images/logo.png" alt=""> <strong>Trust</strong>care </a>
+    
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="./pages/About.html" target="_self">about</a>
+            <a href="./pages/services.html">services</a>
+            <a href="./doctors.php">doctors</a>
+            <a href="./appoinment.php">appointment</a>
+            <a href="#review">review</a>
+            <a href="./pages/blogs.html">blogs</a>
+        </nav>
+    
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+    </header>
+
+    <video id="myVideo" autoplay width="320" height="176"  loop>
+        <source src="./images/vdo3.mp4" type="video/mp4">
+        <!-- <source src="./images/vdo1.ogg" type="video/ogg"> -->
+      </video>
+
+      <script>
+        function toggleMute() {
+
+        var video=document.getElementById("myVideo");
+
+        video.muted = !video.muted;
+
+}
+      </script>
+
+      <div class="content1">
+
+        <button class="btn1" onclick="myFunction()">&#9658;</button>
+        <button class="btn1" onclick="myFunction()">&#10074;&#10074;</button>
+      </div>
+
+      <script>
+        // Get the video
+        var video = document.getElementById("myVideo");
+        
+        // Get the button
+        var btn = document.getElementById("myBtn");
+        
+        // Pause and play the video, and change the button text
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+
+        </script>
+
+
+    <section class="home" id="home">
+
+        
+
+        <!-- <div class="image"> -->
+            <img src="images/14.jpg">
+        <!-- </div> -->
+    
+        <div class="content">
+            <h3>Your Health, Our Priority</h3>
+            <p> At TrustCare Hospital, we are dedicated to providing top-quality healthcare services. Our team of experienced professionals works around the clock to ensure your well-being.</p>
+            <a href="./appoinment.php" class="btn"> appointment us <span class="fas fa-chevron-right"></span> </a>
+        </div>
+    
+    </section>
+
+    
+    
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-user-md"></i>
+            <h3>200+</h3>
+            <p>doctors at work</p>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <h3>1080+</h3>
+            <p>satisfied patients</p>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-procedures"></i>
+            <h3>560+</h3>
+            <p>bed facility</p>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-hospital"></i>
+            <h3>7+</h3>
+            <p>available hospitals</p>
+        </div>
+    
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+    
+        <div class="row">
+    
+            <div class="image">
+                <img src="images/47.jpg" alt="">
+            </div>
+    
+            <div class="content">
+                <h3>take the world's best quality treatment</h3>
+                <p>At TrustCare Hospital, we provide world-class treatment with state-of-the-art facilities and a compassionate team. Our patient-centered approach ensures you receive the highest quality care, from diagnosis to recovery. </p>
+                <p>With our 24/7 emergency services and comprehensive medical offerings, your health is our top priority. Trust us for your healthcare needs.</p>
+                <a href="./pages/About.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <section class="services" id="services">
+
+        <h1 class="heading"> our <span>services</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <i class="fas fa-notes-medical"></i>
+                <h3>free checkups</h3>
+                <p>We provide complimentary health checkups to ensure you stay on top of your health and catch any issues early.</p>
+                <a href="./pages/Services.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-ambulance"></i>
+                <h3>24/7 ambulance</h3>
+                <p>Our ambulance services are available around the clock to provide immediate medical assistance in emergencies.
+
+                </p>
+                <a href="./pages/Services.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-user-md"></i>
+                <h3>expert doctors</h3>
+                <p>Our ambulance services are available around the clock to provide immediate medical assistance in emergencies.
+
+                </p>
+                <a href="./pages/Services.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-pills"></i>
+                <h3>medicines</h3>
+                <p>We offer a comprehensive pharmacy with a wide range of medications to meet all your healthcare needs.</p>
+                <a href="./pages/Services.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-procedures"></i>
+                <h3>bed facility</h3>
+                <p>Our hospital is equipped with comfortable and well-maintained bed facilities to ensure a restful stay for our patients.</p>
+                <a href="./pages/Services.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>total care</h3>
+                <p>We offer a holistic approach to healthcare, addressing all aspects of your well-being from diagnosis to recovery.</p>
+                <a href="./pages/Services.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section class="doctors" id="doctors">
+
+        <h1 class="heading"> our <span>doctors</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="images/37.png" alt="">
+                <h3>Dr. Chamara Perera</h3>
+                <span>General Surgon</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/20.png" alt="">
+                <h3>Dr. Gangadhari Gunasekara</h3>
+                <span>Anesthesiologists</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/44.jpg" alt="">
+                <h3>Dr. Thanushi Basnayake</h3>
+                <span>Cardiologists</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/45.jpg" alt="">
+                <h3>Dr. Virasha Sandamini</h3>
+                <span>Dermatologists</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/21.png">
+                <h3>Dr. Preethika Prasadi</h3>
+                <span>Endocrinologists</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <img src="images/27.png" alt="">
+                <h3>Dr. Nimnadee Rathnayake</h3>
+                <span>Gastroenterologists</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/28.png" alt="">
+                <h3>Dr. Viduni Vaidyarathne</h3>
+                <span>Hematologists</span>
+                <div class="share">
+                    
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/29.png" alt="">
+                <h3>Dr. Aafreen Ansar</h3>
+                <span>Medical Geneticists</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/53.png" alt="">
+                <h3>Dr. Raaziya Hussain</h3>
+                <span>Oncologists</span>
+                <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section class="review" id="review">
+        
+        <h1 class="heading"> client's <span>review</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="./images/5.jpg" alt="">
+                <h3>Mr. Sam</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text">TrustCare  Hospital exceeded my expectations. From the moment I walked in, I felt well taken care of. The modern facilities and state-of-the-art equipment were impressive. The medical staff was knowledgeable and compassionate</p>
+            </div>
+    
+            <div class="box">
+                <img src="./images/6.jpg" alt="">
+                <h3>Mis. Kalpana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text">I received excellent care from the orthopaedic department at TrustCare. The doctor was very thorough in his examination and explained my treatment options clearly. The physical therapy team was also fantastic and helped me regain full use of my arm. </p>
+            </div>
+    
+            <div class="box">
+                <img src="./images/7.jpg" alt="">
+                <h3>Mr. Kasun</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text">I recently had a minor surgery at TrustCare and was very impressed with the cleanliness of the facilities and the friendliness of the staff. Everyone was helpful and accommodating, and I felt very comfortable throughout my stay.</p>
+            </div>
+    
+        </div>
+
+        <a href="./signup/index.php" class="btn"> Add yours <span class="fas fa-chevron-right"></span> </a>
+
+
+    
+    </section>
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> our <span>blogs</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="image">
+                    <img src="./images/12.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 11 July, 2024 </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Preethika </a>
+                    </div>
+                    <h3>The Importance of Outpatient Department</h3>
+                    <p>At TrustCare Hospital, our OPD provides essential, comprehensive healthcare services as the first point of contact for many patients, without requiring overnight stays.</p>
+                    <a href="./pages/blog1.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="./images/9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 11 July, 2024 </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Sam </a>
+                    </div>
+                    <h3>Understanding and Managing Diabetes</h3>
+                    <p>At TrustCare Hospital, we are dedicated to providing top-quality care for individuals with diabetes, helping them understand and manage the condition to lead healthy, fulfilling lives.</p>
+                    <a href="./pages/blog2.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="./images/13.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i>11 July, 2024 </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Prasadi </a>
+                    </div>
+                    <h3>Effective Acne and Pimple Treatments</h3>
+                    <p>Our dermatology team provides personalized treatments for acne and pimples, helping people of all ages achieve clear, healthy skin and boosting their confidence and well-being.</p>
+                    <a href="./pages/blog3.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./images/8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 12 July, 2024  </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Vinoth </a>
+                    </div>
+                    <h3>Understanding and Treating Hair Loss</h3>
+                    <p>we offer comprehensive treatments for hair loss, addressing its emotional impact. Our dermatologists and trichologists provide personalized care to help you effectively manage and treat hair loss.</p>
+                    <a href="./pages/blog4.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./images/11.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 12 July, 2024  </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Dr. Gayan Perera </a>
+                    </div>
+                    <h3>The Importance of Oral Health</h3>
+                    <p>Good oral health is crucial for overall well-being. At TrustCare Hospital, we emphasize proper dental care to prevent serious health issues.</p>
+                    <a href="./pages/blog5.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="./images/10.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="icon">
+                        <a href="#"> <i class="fas fa-calendar"></i> 13 July, 2024  </a>
+                        <a href="#"> <i class="fas fa-user"></i> by Raaziya </a>
+                    </div>
+                    <h3>Preventive Care at TrustCare Can Transform Your Health</h3>
+                    <p>At TrustCare Hospital, we emphasize preventive care to keep you healthy and enhance your quality of life by avoiding illness and promoting well-being.</p>
+                    <a href="./pages/blog6.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <footer class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-chevron-right"></i> home </a>
+                <a href="./pages/About.html"> <i class="fas fa-chevron-right"></i> about </a>
+                <a href="./pages/Services.html"> <i class="fas fa-chevron-right"></i> services </a>
+                <a href="./doctors.php"> <i class="fas fa-chevron-right"></i> doctors </a>
+                <a href="./appoinment.php"> <i class="fas fa-chevron-right"></i> appointment </a>
+                <a href=""> <i class="fas fa-chevron-right"></i> review </a>
+                <a href="./pages/blogs.html"> <i class="fas fa-chevron-right"></i> blogs </a>
+            </div>
+    
+            <div class="box">
+                <h3>our services</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+            </div>
+    
+            <div class="box">
+                <h3>appointment info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +8801688238801 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +8801782546978 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> wincoder9@gmail.com </a>
+                <a href="#"> <i class="fas fa-envelope"></i> sujoncse26@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> sylhet, bangladesh </a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+    
+        </div>
+    
+        <div class="credit">
+        <p>&copy; 2024 <span>TrustCare Hospital</span> | All rights reserved.</p></div>
+    
+    </footer>
+    
+
+    
+</body>
+</html>

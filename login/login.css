@@ -1,0 +1,267 @@
+/* Base Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    color: #444444;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(246, 249, 255, 0.7), rgba(113, 113, 113, 0.7)), 
+    url(https://img.freepik.com/free-photo/nurse-measuring-patient-blood-pressure_53876-14933.jpg?t=st=1721337409~exp=1721341009~hmac=07bc995e8f2f01e69aff95f9034937d51dab3032b186ab105359b9c05ce3624b&w=1060);
+    background-position: center;
+    background-size: cover;
+}
+
+:root {
+    --green: #118870;
+    --black: #444;
+    --light-color: #111;
+    --box-shadow: .2rem .3rem 0 rgba(22, 160, 133, .2);
+    --text-shadow: .2rem .3rem 0 rgba(0, 0, 0, .2);
+    --border: .15rem solid var(--green);
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.header {
+    padding: 1rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #118870;
+}
+
+.header img {
+    width: 40px;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .navbar a {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.header .navbar a:hover {
+    color: rgb(65, 89, 94);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 3rem;
+    letter-spacing: .4rem;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: var(--green);
+}
+
+.footer {
+    background-color: #e5f4f4;
+    text-align: center;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 1rem 0;
+    text-align: center; /* Centered footer box headings */
+}
+
+.footer .box-container .box a {
+    display: flex;
+    font-size: 1rem;
+    color: var(--light-color);
+    padding: 0.6rem 0;
+    justify-content: left; /* Centered footer box links */
+
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+.footer .box-container .box a:hover i {
+    color: #0f1f64;
+}
+
+.footer .credit {
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    text-align: center; /* Centered footer credit text */
+}
+
+.footer .credit span {
+    color: var(--green);
+}
+
+.login {
+    margin-top: 100px;
+}
+
+.login {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 150px auto;
+}
+
+.login h2 {
+    margin-top: 0;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.login form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.login form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login form button:hover {
+    background-color: #218838;
+}
+
+.login p {
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+.login p a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 1rem 3%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #118870;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: 0.3s;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar a {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .login {
+        width: 60%;
+        margin: 150px auto;
+    }
+
+    .footer .box-container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+}
